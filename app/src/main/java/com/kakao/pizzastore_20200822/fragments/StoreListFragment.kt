@@ -1,11 +1,13 @@
 package com.kakao.pizzastore_20200822.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.kakao.pizzastore_20200822.R
+import com.kakao.pizzastore_20200822.StoreDetailActivity
 import com.kakao.pizzastore_20200822.adapters.StoreListAdapter
 import com.kakao.pizzastore_20200822.datas.Store
 import kotlinx.android.synthetic.main.fragment_store_list.*
@@ -13,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_store_list.*
 //3-1:Fragment() 상속
 class StoreListFragment : Fragment() {
 
-    //10:피자가게목록(ArrayList) -> 11:파자가게상세페이지
+    //10:피자가게목록(ArrayList) -> 11:피자가게상세페이지(activity_store_detail1)
     val mPizzaStoreList = ArrayList<Store>()
     lateinit var mStoreListAdapter: StoreListAdapter
 
@@ -64,6 +66,17 @@ class StoreListFragment : Fragment() {
         //10-2:피자가게목록(ArrayList)
         mStoreListAdapter = StoreListAdapter(context!!, R.layout.fragment_store_list_item, mPizzaStoreList)
         pizzaStoreListView.adapter = mStoreListAdapter
+
+
+        //12-3:피자가게상세페이지(StoreListFragment)
+        pizzaStoreListView.setOnItemClickListener { adapterView, view, position, l ->
+
+            val clickedStore = mPizzaStoreList[position]
+            val storeIntent = Intent(context, StoreDetailActivity::class.java)
+            storeIntent.putExtra("storeInfo", clickedStore) //StoreDetailActivity:IntentName
+            startActivity(storeIntent)
+
+        }
 
     }
 

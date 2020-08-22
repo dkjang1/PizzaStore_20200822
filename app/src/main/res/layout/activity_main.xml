@@ -12,7 +12,7 @@
         android:id="@+id/mainTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="#000000" />
+        app:tabIndicatorColor="@color/black" />
 
     <!--    2:피자가게목록(ViewPager) -> 3:피자가게목록(Fragment:StoreListFragment+fragment_store_list.xml) -->
     <androidx.viewpager.widget.ViewPager
