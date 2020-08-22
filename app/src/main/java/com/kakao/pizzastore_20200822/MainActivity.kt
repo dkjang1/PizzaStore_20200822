@@ -20,6 +20,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 //13:피자가게목록(ArrayList) -> 14:피자가게상세페이지(activity_store_detail.xml)
 <!--14:피자가게상세페이지 -> 15:피자가게상세페이지(StoreDetailActivity)-->
 //15:피자가게상세페이지(Intent) -> 16:피자가게전화걸기
+전화걸기(build.gradle:permission)
+닉네임변경(activity_nickname.xml+NicknameActivity)
 */
 
 //1:Baseactivity(BaseActivity.kt) -> 2:ViewPager만들기(activity_main.xml)
