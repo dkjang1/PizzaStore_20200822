@@ -11,14 +11,14 @@ import com.kakao.pizzastore_20200822.R
 import com.kakao.pizzastore_20200822.datas.Store
 import de.hdodenhof.circleimageview.CircleImageView
 
-//9:피자가게목록(StoreListAdapter) -> 10:피자가게목록(StoreListFragment)
+//12:Glide(ManiFest + build.gradle) -> 13:피자가게목록(StoreListFragment.kt)
 class StoreListAdapter(
     val mContext: Context,
     val resId: Int,
     val mList: List<Store>
 ) : ArrayAdapter<Store>(mContext, resId, mList) {
 
-    //9-1:getView()
+    //12-1:LayoutInflater
     val inf = LayoutInflater.from(mContext)
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         //return super.getView(position, convertView, parent)
@@ -28,7 +28,7 @@ class StoreListAdapter(
         }
         val row = checkRow!!
 
-        //9-2:data+CircleImageView+Glide+manifest(build.gradle)
+        //12-2:Glide(ManiFest + build.gradle)
         var logoImg = row.findViewById<CircleImageView>(R.id.logoImg)
         var nameTxt = row.findViewById<TextView>(R.id.nameTxt)
         var data = mList[position]

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="15dp">
 
-    <!--    4:내정보변경 -> 5:TabLayout(PagerAdapter)-->
+    <!--5:내정보변경 -> 6:내정보변경(NicknameFragment.kt)-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,14 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--    6:TabLayout -> 7:피자가게목록(data)-->
+    <!--8:TabLayout -> 9:TabLayout(MainActivity.kt)-->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/mainTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabIndicatorColor="@color/black" />
 
-    <!--    2:피자가게목록(ViewPager) -> 3:피자가게목록(Fragment:StoreListFragment+fragment_store_list.xml) -->
+    <!--2:피자가게목록(ViewPager) -> 3:피자가게목록(fragment_store_list.xml) -->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mainViewPager"
         android:layout_width="match_parent"

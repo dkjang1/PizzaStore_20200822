@@ -6,26 +6,25 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.kakao.pizzastore_20200822.fragments.StoreListFragment
 import com.kakao.pizzastore_20200822.fragments.NicknameFragment
 
-//5:FragmentPagerAdapter -> 6:TabLayout(MainActivity.kt)
+//7:TabLayout(build.gradle) -> 8:TabLayout(acitivity_main.xml)
 class StorePagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
-    //5-1:TabLayout 선택할경우
+    //7-1:TabLayout 선택할경우
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> StoreListFragment()
             else -> NicknameFragment()
         }
-
     }
 
-    //5-2:TabLayout 탭개수
+    //7-2:TabLayout 탭개수
     override fun getCount(): Int {
         return 2
     }
 
-    //5-3:TabLayout 이름
+    //7-3:TabLayout 이름
     override fun getPageTitle(position: Int): CharSequence? {
-//        return super.getPageTitle(position)
+        //return super.getPageTitle(position)
         return when (position) {
             0 -> "피자주문"
             else -> "내정보설정"

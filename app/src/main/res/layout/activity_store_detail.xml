@@ -8,7 +8,7 @@
     android:padding="20dp"
     tools:context=".StoreDetailActivity">
 
-    <!--    11:피자가게상세페이지 -> 12:피자가게상세페이지(StoreDetailActivity)-->
+    <!--14:피자가게상세페이지 -> 15:피자가게상세페이지(StoreDetailActivity)-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

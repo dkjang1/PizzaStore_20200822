@@ -6,10 +6,10 @@ import com.bumptech.glide.Glide
 import com.kakao.pizzastore_20200822.datas.Store
 import kotlinx.android.synthetic.main.activity_store_detail.*
 
-//12:피자가게상세페이지(Intent) -> 13:피자가게전화걸기
+//15:피자가게상세페이지(Intent) -> 16:피자가게전화걸기
 class StoreDetailActivity : BaseActivity() {
 
-    //12-1:Store
+    //15-1:Store
     lateinit var mStore: Store
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class StoreDetailActivity : BaseActivity() {
 
     override fun setValues() {
 
-        //12-2:Intent(activity_store_detail1)
+        //15-2:Intent(activity_store_detail1)
         mStore = intent.getSerializableExtra("storeInfo") as Store //StoreListFragment:IntentName
         nameTxt.text = mStore.name
         phoneNumTxt.text = mStore.phoneNum

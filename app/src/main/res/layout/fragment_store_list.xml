@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--    3:피자가게목록(ListView) -> 4:내정보변경(Fragment:SetupProfileFragment+fragment_nickname.xml) -->
+    <!--3:피자가게목록 -> 4:피자가게목록(StoreListFragment.kt)-->
     <ListView
         android:id="@+id/pizzaStoreListView"
         android:layout_width="match_parent"

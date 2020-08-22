@@ -12,14 +12,14 @@ import com.kakao.pizzastore_20200822.adapters.StoreListAdapter
 import com.kakao.pizzastore_20200822.datas.Store
 import kotlinx.android.synthetic.main.fragment_store_list.*
 
-//3-1:Fragment() 상속
+//4:피자가게목록 -> 5:내정보변경(fragment_nickname.xml)-->
 class StoreListFragment : Fragment() {
 
-    //10:피자가게목록(ArrayList) -> 11:피자가게상세페이지(activity_store_detail1)
+    //13:피자가게목록(ArrayList) -> 14:피자가게상세페이지(activity_store_detail.xml)
     val mPizzaStoreList = ArrayList<Store>()
     lateinit var mStoreListAdapter: StoreListAdapter
 
-    //3-2:onCreateView
+    //4-1:onCreateView
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,11 +30,11 @@ class StoreListFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_store_list, container, false)
     }
 
-    //3-3:onActivityCreated
+    //4-2:onActivityCreated
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        //10-1:피자가게목록(ArrayList.add)
+        //13-1:피자가게목록(ArrayList.add)
         mPizzaStoreList.add(
             Store(
                 "피자헛",
@@ -63,12 +63,12 @@ class StoreListFragment : Fragment() {
                 "1577-3082"
             )
         )
-        //10-2:피자가게목록(ArrayList)
+        //13-2:피자가게목록(ArrayList)
         mStoreListAdapter = StoreListAdapter(context!!, R.layout.fragment_store_list_item, mPizzaStoreList)
         pizzaStoreListView.adapter = mStoreListAdapter
 
 
-        //12-3:피자가게상세페이지(StoreListFragment)
+        //13-3:피자가게상세페이지(StoreListFragment)
         pizzaStoreListView.setOnItemClickListener { adapterView, view, position, l ->
 
             val clickedStore = mPizzaStoreList[position]

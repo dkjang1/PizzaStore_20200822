@@ -7,20 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.kakao.pizzastore_20200822.R
 
-//4-1:Fragment() 상속
+//6:내정보변경 -> 7:TabLayout(StorePagerAdapter.kt)
 class NicknameFragment: Fragment() {
 
-    //4-2:onCreateView
+    //6-1:onCreateView
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        return super.onCreateView(inflater, container, savedInstanceState)
+        //return super.onCreateView(inflater, container, savedInstanceState)
         return inflater.inflate(R.layout.fragment_nickname, container, false)
     }
 
-    //4-3:onActivityCreated
+    //6-2:onActivityCreated
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }
