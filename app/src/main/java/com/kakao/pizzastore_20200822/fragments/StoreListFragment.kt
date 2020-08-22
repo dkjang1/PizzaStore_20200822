@@ -32,7 +32,6 @@ class StoreListFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-
         //10-1:피자가게목록(ArrayList.add)
         mPizzaStoreList.add(
             Store(

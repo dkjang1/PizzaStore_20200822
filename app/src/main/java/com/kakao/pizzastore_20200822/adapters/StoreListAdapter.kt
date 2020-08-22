@@ -28,7 +28,7 @@ class StoreListAdapter(
         }
         val row = checkRow!!
 
-        //9-2:data
+        //9-2:data+CircleImageView+Glide+manifest(build.gradle)
         var logoImg = row.findViewById<CircleImageView>(R.id.logoImg)
         var nameTxt = row.findViewById<TextView>(R.id.nameTxt)
         var data = mList[position]
