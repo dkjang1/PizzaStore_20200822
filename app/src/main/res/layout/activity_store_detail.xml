@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
+        <!--16:피자가게전화걸기 -> 17:피자가게전화걸기(StoreDetailActivity.kt)-->
         <Button
             android:id="@+id/callBtn"
             android:layout_width="wrap_content"

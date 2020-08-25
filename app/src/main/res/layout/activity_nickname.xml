@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".NicknameActivity">
+
+    <!--18:닉네임변경 -> 19:닉네임변겅(NicknameActivity.kt)-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로운 닉네임을 입력하세요" />
+
+    <EditText
+        android:id="@+id/newNicknameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="한줄로 입력(5글자이상)"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임 변경확인" />
+
+</LinearLayout>
